@@ -18,3 +18,7 @@ a:hover{
 a{
   color: white;
 }
+.skill {
+  font-size: 20px;
+  background: rgba(0, 0, 0, .4)
+}
