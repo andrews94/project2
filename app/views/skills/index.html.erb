@@ -1,0 +1,7 @@
+<h1>The Skills</h1>
+<% @skills.each do |skill| %>
+<div>
+ <h2><%= link_to skill.name, skill_path(skill) %> - <%= Champion.find(skill.champion_id).name %></h2>
+
+<% end %>
+</div>

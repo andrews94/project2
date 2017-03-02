@@ -1,0 +1,7 @@
+<h1>The champions</h1>
+<% @champions.each do |champion| %>
+<div class="champion">
+  <h2><%=link_to champion.name, champion_path(champion)%></h2>
+  <img src="<%= champion.img_url %>"/>
+</div>
+<% end %>

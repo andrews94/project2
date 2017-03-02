@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>League of Legends DB</title>
+   <%= csrf_meta_tags %>
+
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+
+ <body>
+
+   <h1></h1>
+   <h2><%= link_to "View Champions", champions_path %> | <%= link_to "New Champion", new_champion_path %> | <%= link_to "New Skill", new_skill_path %></h2>
+   <%= yield %>
+ </body>
+</html>

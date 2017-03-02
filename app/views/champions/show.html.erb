@@ -1,0 +1,17 @@
+<h1><%= @champion.name %></h1>
+<img src="<%= @champion.img_url %>">
+<% @champion.skills.each do |skill| %>
+<div class="skill">
+
+   <h3><%= skill.name %></h3>
+   <%= skill.description %><br>
+   <img src="<%= skill.img_url %>">
+   <a href="<%= skill.video_url%>"><br>Show Video skill</a>
+
+   <h3><%= link_to "Edit Skill", edit_skill_path(skill) %></h3>
+
+
+
+</div>
+
+<% end %>
