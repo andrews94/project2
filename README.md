@@ -8,3 +8,5 @@ The purpose of this app is to create your own champion guide for league of legen
 For my app, the MVP was full CRUD functionality that would allow the app to serve its basic purpose.  Past the MVP would be to add a lot of styling and other aesthetics to make it look very professional.  Further additions would be a personalized experience for each user featuring a login and logout system using devise (i wish i could have done that)
 
 Technologies used to create this app include ruby on rails, postgres, ActiveRecord, HTML, and CSS.  
+
+Fun project!
