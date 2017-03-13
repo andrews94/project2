@@ -13,6 +13,7 @@ class SkillsController < ApplicationController
 
   def new
     @skill = Skill.new
+    # champion_names makes more sense
     @champion_champion = Champion.all.map{ |champion| champion.name}
   end
 
@@ -35,8 +36,6 @@ class SkillsController < ApplicationController
     @skill.destroy
     redirect_to champions_path
   end
-
-
 
   private
   def skill_params
